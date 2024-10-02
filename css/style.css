@@ -1,0 +1,46 @@
+/* fonts geral */
+
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Lobster&family=Noto+Serif+Old+Uyghur&display=swap');
+
+
+body {
+    font-family:"Spyce Rice", serif;   /*fonte do texto  */
+    color: #747171 ;       /* cor do texto */
+    background:#818080;   /* cor do fundo */
+}
+
+a {
+    text-decoration: none;
+    color: #131111;
+}
+
+a:hover { 
+    color: #c2b9b9 ;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Spicy Rice"; /* se der errado volta aqui */
+}
+
+/* cabecalho */
+#header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 300px; ;
+    background: #363636; /* fundo de cor verdical, onde esta a minha foto */
+    transition: all ease-in-out 2s;
+    z-index: 9999;
+    padding: 0 15px;
+    overflow-y: auto;
+}
+
+#header .perfil img {
+    margin: 15px auto;
+    display: block;
+    width: 140px;
+    border: 3px solid #131111;
+    box-shadow: ;
+}
