@@ -73,5 +73,84 @@ h1, h2, h3, h4, h5, h6 {
     color: #c2b9b9;
     background: #131111;
     transition: 0.3s;
-    
+}
+/* fim header */
+
+#main{
+    margin-left:300px;
+}
+
+.container, .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px ;
+}
+/* navegação menu */
+/* desktop navegação */
+.nav-menu{
+    padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+    margin: 1px;
+    padding: 1px;
+    list-style: none;
+}
+
+.nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-menu a, .nav-menu a:focus{
+    display: flex ;
+    align-items: center;
+    color: #c2b9b9;
+    padding: 12px 15px;
+    margin-bottom: 8px ;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.nav-menu a i, .nav-menu a:focus i {
+    font-size:  24px;
+    padding-right: 8px;
+    color: #747171;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>i {
+    color: aliceblue;
+}
+
+
+/* mobile menu */
+.mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline:  none !important;
+    background: #747171;
+    color: rgb(37, 39, 39);
+    width: 40px ;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer
+
 }
