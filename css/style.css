@@ -5,7 +5,7 @@
 
 body {
     font-family:"Spyce Rice", serif;   /*fonte do texto  */
-    color: #747171 ;       /* cor do texto */
+    color: #2b2929 ;       /* cor do texto */
     background:#818080;   /* cor do fundo */
 }
 
@@ -59,8 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .perfil .social-links i {
     font-size: 40px;
-    color: #c2b9b9;
-    background: #131111;
+    color: #f7f0f0;
+    background: #363636;
     border-radius: 50%;
     margin-right: 5px;
     text-align: center;
@@ -71,16 +71,18 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .perfil .social-links i:hover {
     color: #c2b9b9;
-    background: #131111;
+    background: #2e2d2d;
     transition: 0.3s;
 }
 /* fim header */
 
-#main{
+
+#main {
     margin-left:300px;
 }
 
-.container, .container-fluid {
+.container, 
+.container-fluid {
     padding-left: 30px;
     padding-right: 30px ;
 }
@@ -101,7 +103,8 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
 }
 
-.nav-menu a, .nav-menu a:focus{
+.nav-menu a, 
+.nav-menu a:focus{
     display: flex ;
     align-items: center;
     color: #c2b9b9;
@@ -110,7 +113,9 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
     font-size: 15px;
 }
-.nav-menu a i, .nav-menu a:focus i {
+/* menu icones */
+.nav-menu a i, 
+.nav-menu a:focus i {
     font-size:  24px;
     padding-right: 8px;
     color: #747171;
@@ -133,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* mobile menu */
-.mobile-nav-toggle {
+.mobile-nav-toggle { 
     position: fixed;
     right: 15px;
     top: 15px;
@@ -152,5 +157,33 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0;
     border-radius: 50px;
     cursor: pointer
+
+}
+.mobile-nav-active {
+    overflow: hidden;
+}
+
+.mobile-nav-active #header {
+    left: 0;
+}
+
+
+
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px ;
+    }
+
+    
 
 }
